@@ -1,37 +1,50 @@
-
 # Data Cleaning & Visualization Project
 
 ## Project Overview
-This project focuses on the end-to-end pipeline of handling raw, real-world data profiles—specifically identifying and rectifying data anomalies, conducting exploratory data analysis (EDA), and building analytical visualizations to communicate core data stories. 
+This project focuses on cleaning, processing, and visualizing a raw dataset using Python. The goal is to improve data quality and create meaningful visualizations that help understand trends and patterns.
 
-The accompanying Python workflow automates the detection and resolution of missing entries, structural duplicates, and extreme statistical outliers before building a visual dashboard of insights.
+## Objectives
+- Handle missing values
+- Remove duplicate records
+- Detect and handle outliers
+- Perform data preprocessing
+- Create visualizations using Python libraries
+- Generate insights from the dataset
 
----
+##  Tools & Technologies
+- Python
+- Google Colab
+- Pandas
+- Matplotlib
+- Seaborn
 
-## Key Features Implemented
+## Dataset
+- Dataset Name: Global Superstore
+- File Format: CSV
 
-*   **Data Deduplication:** Identified and dropped duplicate data points based on primary identification fields (`Employee_ID`), preserving the first authentic entry.
-*   **Missing Value Imputation:** Implemented robust imputation strategies. Categorical missing values are filled using the dataset's **Mode**, while missing numerical fields are accurately adjusted using the dataset's **Median** to limit skewness.
-*   **Outlier Management:** 
-    *   Applied logical filtering boundaries to clear erroneous inputs (e.g., negative ages or values beyond human capacity).
-    *   Utilized the **Interquartile Range (IQR)** filtering method to clip extreme variance anomalies in compensation profiles.
-*   **Data Visualization & Reporting:** Rendered high-resolution distribution, categorical comparison, and correlation plots using `Matplotlib` and `Seaborn`.
+##  Project Steps
+1. Import required libraries.
+2. Load the dataset.
+3. Explore the dataset.
+4. Handle missing values.
+5. Remove duplicate records.
+6. Detect outliers.
+7. Perform data cleaning.
+8. Create visualizations.
+9. Analyze the results.
+10. Summarize key findings.
 
----
+##  Visualizations Created
+- Bar Chart
+- Pie Chart
+- Histogram
+- Box Plot
+- Heatmap
 
-## Technical Stack & Libraries
-*   **Language:** Python 3.x
-*   **Data Manipulation:** `pandas`, `numpy`
-*   **Data Visualization:** `matplotlib`, `seaborn`
-*   **File I/O:** `os`
+## Key Findings
+- Missing values and duplicate records were handled successfully.
+- The dataset became cleaner and more consistent.
+- Visualizations helped identify sales trends, category performance, and data distribution.
 
----
-
-## Project Structure
-```text
-├── data_project.py        # Complete automated Python pipeline script
-├── README.md              # Project documentation and guide
-└── plots/                 # Generated analytical reports (Output)
-    ├── salary_distribution.png
-    ├── salary_by_department.png
-    └── age_vs_salary.png
+##  Outcome
+This project improved my understanding of data cleaning, preprocessing, exploratory data analysis (EDA), and data visualization using Python.
